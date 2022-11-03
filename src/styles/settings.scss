@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "$font-1";
+    src: url('../../assets/fonts/Montserrat-VariableFont_wght.ttf')
+}
+
+$font-1: "Montserrat", "sans-serif";
+
+$color-1: #EB9F8E;
+$color-2: #E6B73D;
+$color-3: #B6B8B4;
+$color-4: #00ccff;
+$color-5: #FBC2B5;
+$color-6: #F2CE63;
+$color-7: #D5D6D4;
+$color-8: #98DADB;
+
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font-1;
+    background-color: #0c1022;
+}
+
+li{
+    list-style-type: none;
+}
+
+a:visited, :active, :link, :hover{
+    text-decoration: none;
+    color: black;
+}

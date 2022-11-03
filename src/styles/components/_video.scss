@@ -1,0 +1,58 @@
+.video_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.react-video-player{
+    position: relative;
+    z-index: 2;
+    width: 1280px;
+    height: 720px;
+}
+
+.box{
+    position: relative;
+    background: rgba(0,0,0,0.75);
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 3px;
+    ::before{
+        content: '';
+        position: absolute;
+        width: 1500px;
+        height: 1500px;
+        background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+        animation: animate 4s linear infinite;
+        top: -450px;
+        left: -225px;
+        z-index: -1;
+    }
+    ::after{
+        content: '';
+        position: absolute;
+        width: 1500px;
+        height: 1500px;
+        background-image: conic-gradient(transparent, transparent, transparent, #d400d4);
+        animation: animate 4s linear infinite;
+        animation-delay: -2s;
+        top: -450px;
+        left: -225px;
+        z-index: -1;
+    }
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}

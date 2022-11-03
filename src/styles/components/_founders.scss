@@ -1,0 +1,51 @@
+.first_portrait{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    .founders_photo_1{
+        background: url("../../../public/vegetapic.jpg");
+        width: 400px;
+        height: 400px;
+        float:  right;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 40px;
+    }
+    p{
+        color: white;
+        width: 70%;
+        margin-left: 50px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        margin-right: 50px;
+    }
+}
+.second_portrait{
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    .founders_photo_2{
+        background: url("../../../public/gokupic.jpg");
+        width: 400px;
+        height: 400px;
+        float: right;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 40px;
+        order: 1;
+    }
+    p{
+        color: white;
+        width: 70%;
+        margin-left: 70px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
